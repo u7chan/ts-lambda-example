@@ -7,7 +7,7 @@
     "prebuild": "rm -rf dist",
     "build": "esbuild src/index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js",
     "postbuild": "cd dist && zip -r index.zip index.js*",
-    "deploy": "npm run build && sh deploy.sh"
+    "deploy": "npm run build && sh deploy.sh $npm_config_role"
   },
   "author": "u7chan",
   "license": "MIT",
