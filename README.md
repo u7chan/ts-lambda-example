@@ -3,5 +3,5 @@
 ## Usage
 
 ```
-$ npm run deploy -role=arn:aws:iam::************:role/************
+$ npm run deploy -name=example-helloworld -role=arn:aws:iam::************:role/************
 ```
